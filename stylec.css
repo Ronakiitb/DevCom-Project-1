@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10 vh;
+  color: white;
+  background: #1f242d;
+  z-index: 2;
+}
+
+.portfolio {
+  width: 333px;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.folio {
+  color: yellow;
+}
+
+.panel a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.panel {
+  display: flex;
+  width: 900px;
+  justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: block;
+  }
+  .portfolio {
+    justify-self: center;
+  }
+  .panel {
+    padding-top: 20px;
+    justify-content: start;
+  }
+  .panel a {
+    margin-left: 5vw;
+  }
+  .content {
+    padding-top: 20px;
+  }
+}
+/* HOBBIES */
+.header {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  background: #1f242d;
+  border-color: #1f242d;
+  margin-top: 5vh;
+  padding-top: 10vh;
+}
+.heading2 {
+  color: yellow;
+}
+
+.contact {
+  background: #1f242d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 4rem;
+  margin-top: -2rem;
+}
+.contact form {
+  width: 100%;
+  max-width: 70vw;
+}
+.contactList {
+  margin-bottom: 30px;
+  position: relative;
+}
+.contactList input,
+.contactList textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  font-size: 15px;
+}
+.contactList label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: white;
+  cursor: text;
+  transition: 0.25s ease;
+}
+.contactList input:focus ~ label,
+.contactList input:valid ~ label,
+.contactList textarea:focus ~ label,
+.contactList textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+.contactList textarea {
+  resize: none;
+}
+.contact form button {
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  width: 102.5%;
+  cursor: pointer;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+  .header {
+    margin-top: 100px;
+  }
+  .panel a {
+    font-size: 24px;
+  }
+}
